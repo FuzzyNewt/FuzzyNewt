@@ -10,6 +10,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
+<script src="https://kit.fontawesome.com/415cb8fc0c.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,13 +44,50 @@
       nav a { display: inline-block; color: #fff;  text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0); padding: 2px; }
       nav a:hover, nav a:focus, nav a:active { color: #fff; border-bottom: 2px solid rgba(255,255,255,1); }
       nav a[href=""], nav a[href="#"] { opacity: 0.7; border-bottom: 2px solid rgba(255,255,255,0); cursor: default; pointer-events: none; }
-      .title { display: block; text-align: center; font-family: 'Press Start 2P', cursive; font-size: 32px; margin: 0 auto 48px; color: #fff; }
+      .title { display: block; text-align: center; font-family: 'Press Start 2P', cursive; font-size: 32px; color: #fff; }
 
       .modal { color: #000; }
     </style>
 
   </head>
   <body>
+    <style>
+    #header {  }
+    .header {  }
+    .header-logo__a {  }
+    </style>
+    <main>
+      <header id="header" class="header js-header">
+        <a class="header-logo__a" href="/" >
+          <i class="fa-solid fa-headset"></i>
+          <span class="title">FuzzyNewt</span>
+        </a>
+        <nav>
+          <ul>
+            <li>Games</li>
+            <li>Projects</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="material-symbols-outlined">system_update_alt</span>
+            <span class="fs-4 title">FuzzyNewt</span>
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+          </ul>
+        </header>
+      </div>
+    </main>
 
     <!-- /* === ICONS: Icon Usage Example === */
     <span class="material-symbols-outlined">system_update_alt</span>
@@ -75,11 +113,13 @@
                 Tamakai
               </button>
             </li>
+<!--
             <li>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-tamakai-online">
                 Tamakai Online
               </button>
             </li>
+-->          
             <li>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-sagewynne">
                 Sagewynne
@@ -108,8 +148,8 @@
                 Features:
               </div>
               <div class="modal-footer">
-                <a class="btn btn-primary" href="https://github.com/FuzzyNewt/tamakai">GitHub</a>
-                <a class="btn btn-primary" href="https://fuzzynewt.github.io/tamakai/">Demo</a>
+                <a class="btn btn-primary" href="https://github.com/FuzzyNewt/tamakai"><i class="bi bi-git"></i> GitHub</a>
+                <a class="btn btn-primary" href="https://fuzzynewt.github.io/tamakai/"><i class="bi bi-github"></i> Demo</a>
               </div>
             </div>
           </div>
@@ -208,8 +248,10 @@
     </section>
 
     <!--
-    <footer>
+    <footer id="footer" class="footer js-footer">
       <small>FuzzyNewt &copy;</small>
+      <i class="fa-brands fa-bitcoin"></i> BitCoin
+      <i class="fa-brands fa-patreon"></i> Patreon
     </footer>
     -->
 
