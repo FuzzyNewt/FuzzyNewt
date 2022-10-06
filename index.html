@@ -34,104 +34,73 @@
         background: -moz-linear-gradient(top left, #5A1DA0, #B447EF);
         background: linear-gradient(to bottom right, #5A1DA0, #B447EF); }
       /* === General === */
-      body { display: flex; flex-wrap: wrap; align-items: center; color: #fff; }
+      body { color: #fff; }
       header { width: 100%; }
       section { width: 100%; }
 
-      nav {  }
-      nav ul { width: 100%; max-width: 620px; display: flex; flex-wrap: wrap; margin: 0 auto; }
-      nav li { width: 50%; padding: 0 6px; margin: 0 0 16px; }
-      nav a { display: inline-block; color: #fff;  text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0); padding: 2px; }
-      nav a:hover, nav a:focus, nav a:active { color: #fff; border-bottom: 2px solid rgba(255,255,255,1); }
-      nav a[href=""], nav a[href="#"] { opacity: 0.7; border-bottom: 2px solid rgba(255,255,255,0); cursor: default; pointer-events: none; }
-      .title { display: block; text-align: center; font-family: 'Press Start 2P', cursive; font-size: 32px; color: #fff; }
 
+
+      .title { display: block; text-align: center; font-family: 'Press Start 2P', cursive; font-size: 32px; color: #fff; }
       .modal { color: #000; }
+
+
+      .site-wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+      .header {  }
+      .header-brand { border-bottom: 2px solid #fff; }
+      .header-logo { display: inline-block; color: #fff; text-decoration: none; padding: 16px 4px }
+      .header-icon { display: inline-block; vertical-align: middle; margin: 0 24px 0 0; font-size: 48px; }
+      .header-title { display: inline-block; vertical-align: middle; }
+
+      .header-nav { padding: 24px 0; }
+      .header-nav ul { display: block; text-align: right; }
+      .header-nav li { display: inline-block; margin: 0 6px; }
+      .header-nav a { color: #fff; }
+      .header-nav a:hover, .header-nav a:focus, .header-nav a:active { color: #fff; text-decoration: none; }
+
+      .section { text-align: center; }
+      .section-heading { margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+      .section button { margin: 0 24px; }
     </style>
 
   </head>
   <body>
-    <style>
-    #header {  }
-    .header {  }
-    .header-logo__a {  }
-    </style>
+    <div class="site-wrap">
     <main>
       <header id="header" class="header js-header">
-        <a class="header-logo__a" href="/" >
-          <i class="fa-solid fa-headset"></i>
-          <span class="title">FuzzyNewt</span>
-        </a>
-        <nav>
+        <div class="header-brand">
+          <a class="header-logo" href="/" >
+            <i class="fa-solid fa-headset header-icon"></i>
+            <span class="title header-title">FuzzyNewt</span>
+          </a>
+        </div>
+        <nav class="header-nav">
           <ul>
-            <li>Games</li>
-            <li>Projects</li>
-            <li>About</li>
+            <li><a href="#" onclick="javascript:alert('These are not real links. :/ ')">Games</a></li>
+            <li><a href="#" onclick="javascript:alert('These are not real links. :/ ')">Support</a></li>
           </ul>
         </nav>
       </header>
 
+      <section class="section section--games">
+        <div class="section-heading">
+          <h2>Games</h2>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-tamakai">
+          Tamakai
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-sagewynne">
+          Sagewynne
+        </button>
+      </section>
+      <!--
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-tamakai-online">
+        Tamakai Online
+      </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-utilities">
+        Utilities
+      </button>
+      -->
 
-
-      <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <span class="material-symbols-outlined">system_update_alt</span>
-            <span class="fs-4 title">FuzzyNewt</span>
-          </a>
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Games</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-          </ul>
-        </header>
-      </div>
-    </main>
-
-    <!-- /* === ICONS: Icon Usage Example === */
-    <span class="material-symbols-outlined">system_update_alt</span>
-    -->
-
-    <!-- /* === HEADER === */
-    <header>
-      <h1 class="title">FuzzyNewt</h1>
-      <small>Hyper Text Markup Language</small>
-    </header>-->
-
-    <!-- /* === MAIN === */ -->
-    <section>
-
-      <article>
-
-        <h1 class="title">FuzzyNewt</h1>
-
-        <nav>
-          <ul>
-            <li>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-tamakai">
-                Tamakai
-              </button>
-            </li>
-<!--
-            <li>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-tamakai-online">
-                Tamakai Online
-              </button>
-            </li>
--->          
-            <li>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-sagewynne">
-                Sagewynne
-              </button>
-            </li>
-            <li>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-utilities">
-                Utilities
-              </button>
-            </li>
-          </ul>
-        </nav>
 
         <!-- Modal -->
         <div class="modal fade" id="game-tamakai" tabindex="-1" aria-labelledby="modalGameTamakaiLabel" aria-hidden="true">
@@ -256,7 +225,8 @@
     -->
 
 	<!--<script src="index.js"></script>-->
-  <script>
-  </script>
+  <script></script>
+
+    </div>
   </body>
 </html>
